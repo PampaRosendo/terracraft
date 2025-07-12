@@ -5,7 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🌍 TerraCraft - Servidor Minecraft</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rubik&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #111;
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+
+    header.hero {
+      background: url('https://i.imgur.com/zwzM4BI.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      color: #fff;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: #d92332;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff4040;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #d92332;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #d9233277;
+      text-align: center;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4040;
+    }
+
+    .rank-list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .rank-list li {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
